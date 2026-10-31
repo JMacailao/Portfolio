@@ -20,12 +20,12 @@ const PROJECTS = [
   },
   {
     title: "CSE Reviewer",
-    url: "https://jeremiah110102.github.io/CSE_Game/",
+    url: "https://jmacailao.github.io/CSE_Game/",
     tags: ["Responsive", "UI"],
   },
   {
     title: "Delevieres Report",
-    url: "https://jeremiah110102.github.io/LGMC-Deleviries/",
+    url: "https://jmacailao.github.io/LGMC-Deleviries/",
     tags: ["Responsive", "UI"],
   },
   {
