@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jeremiah | IT Professional &amp; Developer</title>
+    <meta
+      name="description"
+      content="Portfolio of Jeremiah, IT professional and aspiring software developer."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- NAVIGATION -->
+    <header class="nav">
+      <div class="container nav-inner">
+        <a href="#home" class="logo">Jeremiah</a>
+        <button
+          class="menu-btn"
+          id="menuBtn"
+          aria-label="Open menu"
+          aria-expanded="false"
+        >
+          <span></span><span></span><span></span>
+        </button>
+        <nav class="nav-links" id="navLinks">
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- HERO -->
+      <section class="hero" id="home">
+        <div class="container hero-inner">
+          <div class="hero-text">
+            <p class="eyebrow">
+              IT Professional &middot; Aspiring Software Developer
+            </p>
+            <h1>Hi, I'm Jeremiah.</h1>
+            <p class="hero-sub">
+              I turn ideas into intuitive, reliable websites and applications
+              that solve real problems.
+            </p>
+            <div class="hero-buttons">
+              <a href="#projects" class="btn btn-primary">View my work</a>
+              <a href="#contact" class="btn btn-outline">Contact me</a>
+            </div>
+          </div>
+          <div class="hero-photo">
+            <img
+              src="jeremiah.jpg"
+              alt="Portrait of Jeremiah"
+              width="400"
+              height="400"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- ABOUT -->
+      <section class="section" id="about">
+        <div class="container">
+          <h2 class="section-title">About me</h2>
+          <div class="about-grid">
+            <p class="about-text">
+              I'm an IT professional passionate about software development,
+              problem-solving, and building practical solutions through
+              technology. With a background in IT support and technical
+              troubleshooting, I'm continuously expanding my programming skills
+              and working toward becoming a professional Software Developer.
+            </p>
+            <div class="stats">
+              <div class="stat">
+                <strong>1+</strong><span>Years of coding</span>
+              </div>
+              <div class="stat">
+                <strong>5+</strong><span>Projects built</span>
+              </div>
+              <div class="stat">
+                <strong>3</strong><span>Technologies</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SKILLS + AI TOOLS -->
+      <section class="section section-alt" id="skills">
+        <div class="container">
+          <h2 class="section-title">Skills</h2>
+          <div class="skills-grid">
+            <div>
+              <h3 class="sub-title">Technical skills</h3>
+              <ul class="tags">
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>JavaScript</li>
+                <li>PHP</li>
+                <li>React</li>
+                <li>MySQL</li>
+                <li>SQL Server</li>
+                <li>GitHub</li>
+              </ul>
+            </div>
+            <div>
+              <h3 class="sub-title">AI tools</h3>
+              <!-- Filled from the AI_TOOLS list in script.js -->
+              <ul class="ai-list" id="aiList"></ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PROJECTS -->
+      <section class="section" id="projects">
+        <div class="container">
+          <h2 class="section-title">Projects</h2>
+          <p class="section-intro">Select a project to preview it below.</p>
+
+          <!-- Filled from the PROJECTS list in script.js -->
+          <div class="project-grid" id="projectGrid"></div>
+
+          <!-- Preview -->
+          <div class="preview" id="preview">
+            <div class="preview-bar">
+              <span class="preview-dots"><i></i><i></i><i></i></span>
+              <span class="preview-url" id="previewUrl"></span>
+              <a
+                class="preview-open"
+                id="previewOpen"
+                href="#"
+                target="_blank"
+                rel="noopener"
+                >Open site &#8599;</a
+              >
+            </div>
+            <div class="preview-body">
+              <iframe
+                id="previewFrame"
+                title="Website preview"
+                loading="lazy"
+              ></iframe>
+              <img id="previewImg" alt="" hidden />
+              <div class="preview-message" id="previewMessage" hidden>
+                <p><strong>This site can't be displayed here.</strong></p>
+                <p id="previewNote">
+                  The website's host doesn't allow previews inside other pages.
+                </p>
+                <a
+                  class="btn btn-primary"
+                  id="previewMsgLink"
+                  href="#"
+                  target="_blank"
+                  rel="noopener"
+                  >Open the website</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACT -->
+      <section class="section section-alt" id="contact">
+        <div class="container contact">
+          <h2 class="section-title">Get in touch</h2>
+          <p class="section-intro">
+            I'm open to job opportunities, freelance projects, and
+            collaborations.
+          </p>
+          <a
+            class="btn btn-primary"
+            href="mailto:jeremiahmacailao110102@gmail.com"
+            >jeremiahmacailao110102@gmail.com</a
+          >
+          <ul class="socials">
+            <li>
+              <a href="https://github.com/" target="_blank" rel="noopener"
+                >GitHub</a
+              >
+            </li>
+            <li>
+              <a href="https://linkedin.com/" target="_blank" rel="noopener"
+                >LinkedIn</a
+              >
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>&copy; <span id="year"></span> Jeremiah. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
